@@ -1,11 +1,8 @@
-from MinimumPathSum import mps_Reccursion , mps_Memo , mpsDp
+from UniquePaths_II import up_2_Reccursion , up2_Memo , up2_Dp
+from UniquePaths import uniquePathsDp
 grid = [
-    [3, 7, 9, 2],
-    [2, 5, 1, 3],
-    [0, 4, 6, 1],
-    [2, 8, 2, 4]
-]
-memo = [[-1 for _ in range(4)] for _ in range(4)]
-print(mps_Reccursion(grid)) # 7
-print(mps_Memo(grid , 0 , 0 , memo)) # 7
-print(mpsDp(grid))
+    [1]]
+
+print(up_2_Reccursion(grid, 0  ,0 ))
+print(up2_Memo(grid, 0  ,0 , [[-1 for i in range(len(grid[0]))] for j in range(len(grid)) ]))
+print(up2_Dp(grid))
